@@ -80,6 +80,9 @@ function knightlOnAChessboard(n, a, b) {
       if (chess[i] == undefined) chess[i] = [];
       g.addVertex(node(i, j));
 
+      /**
+       * Each vertex is connected with maximum 8 edges
+       **/
       if (i + a < n && j + b < n)
         g.addEdge(node(i, j), node(i + a, j + b))
 
